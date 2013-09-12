@@ -22,7 +22,6 @@ alias static='cd ~/Sites/8508/static'
 alias gs='git status'
 alias gpush='git push origin'
 alias gpull='git pull origin'
-alias ga='git add .'
 
 alias -s html=st
 alias -s scss=st
