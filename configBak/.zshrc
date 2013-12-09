@@ -11,22 +11,23 @@ ZSH_THEME="robbyrussell"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias chatroom='cd ~/Sites/8508/chatroom'
-alias site='cd ~/Sites/8508/website'
-alias admin='cd ~/Sites/8508/admin' 
+alias chatroom='cd ~/Sites/8508/chatroom;python www.py'
+alias site='cd ~/Sites/8508/website;python website.py'
 alias punsha='cd ~/Sites/punsha'
 alias gnrcn='cd ~/Sites/gnrcn'
-alias pt='cd ~/Sites/nexusphp'
 alias static='cd ~/Sites/8508/static'
+alias main='cd ~/Sites/8508/main;python main.py'
 
 alias gs='git status'
 alias gpush='git push origin'
 alias gpull='git pull origin'
+alias gsu='git submodule update'
 
 alias -s html=st
 alias -s scss=st
 alias -s js=st
 alias -s css=st
+alias -s py=python
 
 alias mysql='/usr/local/mysql/bin/mysql'
 alias mysqladmin='usr/local/mysql/bin/mysqladmin'
