@@ -11,17 +11,29 @@ ZSH_THEME="robbyrussell"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias chatroom='cd ~/Sites/8508/chatroom;python www.py'
-alias site='cd ~/Sites/8508/website;python website.py'
+alias nginxrc='cd /usr/local/etc/nginx/'
+
+alias fpm="launchctl load -w ~/Library/LaunchAgents/homebrew-php.josegonzalez.php54.plist"
+alias fpmstop='launchctl unload -w ~/Library/LaunchAgents/homebrew-php.josegonzalez.php54.plist'
+
+alias zshrc='subl ~/.zshrc'
+alias zshrun='source ~/.zshrc'
+alias chatroom='cd ~/Sites/8508/chatroom'
+alias site='cd ~/Sites/8508/website'
 alias punsha='cd ~/Sites/punsha'
 alias gnrcn='cd ~/Sites/gnrcn'
 alias static='cd ~/Sites/8508/static'
-alias main='cd ~/Sites/8508/main;python main.py'
+alias my='cd ~/Sites/8508/my'
+alias main='cd ~/Sites/8508/main'
+alias api='cd ~/Sites/8508/api'
+alias set='cd ~/Sites/8508/settings'
 
 alias gs='git status'
 alias gpush='git push origin'
 alias gpull='git pull origin'
-alias gsu='git submodule update'
+alias gsu='git submodule update --recursive'
+
+alias nw='/Applications/node-webkit.app/Contents/MacOS/node-webkit'
 
 alias -s html=st
 alias -s scss=st
@@ -66,4 +78,5 @@ plugins=(git sublime osx autojump)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+export PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
 export PATH=$PATH:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
