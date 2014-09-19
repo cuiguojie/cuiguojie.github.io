@@ -21,19 +21,20 @@ alias zshrun='source ~/.zshrc'
 alias chatroom='cd ~/Sites/8508/chatroom'
 alias site='cd ~/Sites/8508/website'
 alias punsha='cd ~/Sites/punsha'
+alias dami='cd ~/Sites/dami'
 alias gnrcn='cd ~/Sites/gnrcn'
 alias static='cd ~/Sites/8508/static'
 alias my='cd ~/Sites/8508/my'
 alias main='cd ~/Sites/8508/main'
 alias api='cd ~/Sites/8508/api'
 alias set='cd ~/Sites/8508/settings'
-
+alias iuikit='cd ~/Sites/iuikit'
+alias mongorun='mongod --config /usr/local/etc/mongod.conf'
 alias gs='git status'
 alias gpush='git push origin'
 alias gpull='git pull origin'
 alias gsu='git submodule update --recursive'
-
-alias nw='/Applications/node-webkit.app/Contents/MacOS/node-webkit'
+alias gpub='git push pub master'
 
 alias -s html=st
 alias -s scss=st
